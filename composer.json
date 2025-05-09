@@ -1,0 +1,30 @@
+{
+    "name": "purifymedia/contactform",
+    "description": "laravel contact form package",
+    "type": "package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Purifymedia\\Contactform\\": "src/"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Purifymedia\\Contactform\\ContactFormServiceProvider"
+            ]
+        }
+    },
+
+    "minimum-stability": "dev",
+
+    "require-dev": {
+        "njoguamos/laravel-turnstile": "^1.0"
+    },
+    "suggest": {
+        "njoguamos/laravel-turnstile": "Gebruik voor CAPTCHA-beveiliging via Cloudflare Turnstile"
+    }
+
+
+}

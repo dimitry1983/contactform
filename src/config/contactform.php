@@ -2,7 +2,7 @@
 
 return [
 
-    'register_routes' => false,
+    'register_routes' => true,
 
     // Ontvanger van het contactformulier
     'recipient_email' => env('CONTACTFORM_RECIPIENT', 'info@example.com'),

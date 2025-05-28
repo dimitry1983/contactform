@@ -20,6 +20,7 @@ class ContactFormSubmitted extends Mailable
     public function build()
     {
         return $this->subject('Nieuw contactformulier')
+            ->from(config('contactform.recipient_email'), $this->data['name'])
             ->replyTo($this->data['email'], $this->data['name'])
             ->view('contactform::emails.contact-submitted');
     }
